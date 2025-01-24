@@ -1,0 +1,30 @@
+.UserCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #fdf5e8;
+  padding: 20px 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: #000;
+}
+
+.UserCard p {
+  font-size: 20px;
+}
+
+.UserCard-btn {
+  background-color: #54101d;
+  color: #d5c5ae;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.UserCard-btn:hover {
+  color: #d5c5ae;
+}

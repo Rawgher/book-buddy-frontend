@@ -1,0 +1,31 @@
+.UserSearch {
+  text-align: center;
+}
+
+.UserSearch-card-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.UserSearch-bottom-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+  margin: 20px auto;
+  color: #fff;
+}
+
+.UserSearch-card-btn {
+  background-color: #54101d;
+  color: #d5c5ae;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}

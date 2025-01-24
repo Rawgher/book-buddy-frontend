@@ -1,0 +1,41 @@
+.Profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1400px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  color: #000;
+}
+
+.Profile-top-div,
+.Profile-holder-div {
+  background-color: #fdf5e8;
+  padding: 40px;
+  border-radius: 5px;
+  width: 800px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.Profile-not-found,
+.Profile-no-books {
+  color: #000;
+  font-size: 30px;
+}
+
+.Profile-link {
+  background-color: #54101d;
+  color: #d5c5ae;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.Profile-link:hover {
+  color: #d5c5ae;
+}

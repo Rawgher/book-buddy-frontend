@@ -1,0 +1,16 @@
+.BookCardSearch {
+  background-color: #fdf5e8;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.BookCard-card-right {
+  width: 180px;
+  min-height: 220px;
+}

@@ -1,0 +1,32 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fdf5e8;
+  padding: 15px 0;
+}
+
+.Nav-right {
+  max-width: 500px;
+  width: 100%;
+}
+
+.Nav-right-not-logged-in {
+  max-width: 200px;
+  width: 100%;
+}
+
+.Nav-link {
+  padding: 0 20px;
+  color: #000;
+}
+
+.Nav-link:hover {
+  color: #303030;
+}

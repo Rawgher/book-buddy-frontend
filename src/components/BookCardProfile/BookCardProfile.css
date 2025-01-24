@@ -1,0 +1,21 @@
+.BookCardProfile {
+  background-color: #fdf5e8;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  width: 800px;
+}
+
+.BookCardProfile-card-mid {
+  width: 180px;
+  min-height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

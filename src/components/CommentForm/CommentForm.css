@@ -1,0 +1,23 @@
+.CommentForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.CommentForm textarea {
+  width: 300px;
+  padding: 10px;
+  color: #fdf5e8;
+}
+
+.CommentForm button {
+  background-color: #002907;
+  color: #d5c5ae;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
