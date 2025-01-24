@@ -41,7 +41,6 @@ function App() {
   // Log in user
   async function login(formD) {
     const token = await BookBuddyApi.login(formD);
-    console.log(token);
     setToken(token);
   }
 
