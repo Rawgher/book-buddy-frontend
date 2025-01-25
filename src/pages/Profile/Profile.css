@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 1400px;
   padding: 20px 20px;
   margin: 0 auto;
   color: #000;
@@ -14,10 +13,11 @@
   background-color: #fdf5e8;
   padding: 40px;
   border-radius: 5px;
-  width: 800px;
+  max-width: 800px;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .Profile-not-found,
@@ -38,4 +38,38 @@
 
 .Profile-link:hover {
   color: #d5c5ae;
+}
+
+@media (max-width: 1000px) {
+  .Profile-top-div {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Profile-top-div {
+    max-width: 400px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .Profile-top-div {
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .Profile-top-div {
+    max-width: 240px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .Profile-top-div {
+    max-width: 220px;
+    text-align: center;
+  }
 }

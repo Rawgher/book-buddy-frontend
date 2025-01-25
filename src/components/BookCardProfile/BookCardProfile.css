@@ -19,3 +19,50 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media (max-width: 1000px) {
+  .BookCardProfile {
+    max-width: 800px;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .BookCardProfile-card-mid {
+    max-width: 180px;
+    width: 100%;
+    min-height: unset;
+  }
+
+  .BookCardProfile-card-mid h3,
+  .BookCardProfile-card-mid p {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .BookCardProfile {
+    max-width: 400px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .BookCardProfile {
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .BookCardProfile {
+    max-width: 240px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .BookCardProfile {
+    max-width: 220px;
+    text-align: center;
+  }
+}

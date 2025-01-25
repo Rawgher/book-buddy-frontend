@@ -1,10 +1,11 @@
-.Splash {
+.NotFound {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
+  min-width: 500px;
+  max-width: 800px;
   background-color: #fdf5e8;
   padding: 20px 20px;
   margin: 0 auto;
@@ -12,7 +13,7 @@
   color: #000;
 }
 
-.Splash-btns-div {
+.NotFound-btns-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +21,7 @@
   margin-top: 30px;
 }
 
-.Splash-btns {
+.NotFound-btns {
   background-color: #54101d;
   color: #d5c5ae;
   width: 150px;
@@ -29,30 +30,34 @@
   border-radius: 5px;
 }
 
-.Splash-btns:hover {
+.NotFound-btns:hover {
   color: #d5c5ae;
 }
 
+.NotFound p {
+  text-align: center;
+  max-width: 80%;
+}
+
 @media (max-width: 767px) {
-  .Splash {
+  .NotFound {
     max-width: 400px;
-    text-align: center;
   }
 }
 
 @media (max-width: 450px) {
-  .Splash {
+  .NotFound {
     max-width: 280px;
     text-align: center;
   }
 
-  .Splash-btns-div {
+  .NotFound-btns-div {
     flex-direction: column;
   }
 }
 
 @media (max-width: 350px) {
-  .Splash {
+  .NotFound {
     max-width: 240px;
     text-align: center;
   }

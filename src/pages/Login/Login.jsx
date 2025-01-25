@@ -25,18 +25,14 @@ function Login({ login }) {
       await login(formData);
       navigate("/");
     } catch (err) {
-      setError(true);
+      setError(err);
     }
   };
 
   return (
     <div className="Login">
       <h1>Log In</h1>
-      {error && (
-        <p className="Login-error-txt">
-          There has been an error with your submission. Please try again.
-        </p>
-      )}
+      {error && <p className="Login-error-txt">{error}</p>}
       <form onSubmit={handleSubmit} className="Login-form">
         <input
           id="username"

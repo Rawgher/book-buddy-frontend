@@ -8,6 +8,8 @@ import UserProfile from "./pages/Profile/Profile";
 import UserSearch from "./pages/UserSearch/UserSearch";
 import SignUp from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+import NotFound from "./pages/NotFound/NotFound";
 
 function RouteList({ signup, login }) {
   const { currentUser } = useContext(userContext);
@@ -21,33 +23,43 @@ function RouteList({ signup, login }) {
 
       <Route
         path="/splash"
-        element={currentUser ? <Splash /> : <Navigate to="/login" />}
+        element={
+          <ProtectedRoute currentUser={currentUser}>
+            <Splash />
+          </ProtectedRoute>
+        }
       />
       <Route
         path="/books"
-        element={currentUser ? <BookSearch /> : <Navigate to="/login" />}
+        element={
+          <ProtectedRoute currentUser={currentUser}>
+            <BookSearch />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/users"
-        element={currentUser ? <UserSearch /> : <Navigate to="/login" />}
+        element={
+          <ProtectedRoute currentUser={currentUser}>
+            <UserSearch />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/users/:username"
         element={
-          currentUser ? (
+          <ProtectedRoute currentUser={currentUser}>
             <UserProfile currentUser={currentUser} />
-          ) : (
-            <Navigate to="/login" />
-          )
+          </ProtectedRoute>
         }
       />
 
       <Route path="/signup" element={<SignUp signup={signup} />} />
       <Route path="/login" element={<Login login={login} />} />
 
-      <Route path="*" element={<Navigate to="/" />} />
+      <Route path="*" element={<NotFound currentUser={currentUser} />} />
     </Routes>
   );
 }

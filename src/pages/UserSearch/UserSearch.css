@@ -8,7 +8,7 @@
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .UserSearch-bottom-div {
@@ -28,4 +28,14 @@
   text-align: center;
   padding: 10px;
   border-radius: 5px;
+}
+
+@media (max-width: 550px) {
+  .UserSearch h1 {
+    margin-top: 100px;
+  }
+
+  .UserSearch-bottom-div {
+    flex-direction: column;
+  }
 }

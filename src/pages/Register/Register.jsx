@@ -26,8 +26,7 @@ function Register({ signup }) {
       await signup(formData);
       navigate("/");
     } catch (err) {
-      console.log(err);
-      setError(true);
+      setError(err);
     }
   };
 
@@ -35,9 +34,13 @@ function Register({ signup }) {
     <div className="Register">
       <h1>Join the Book Club</h1>
       {error && (
-        <p className="Register-error-txt">
-          There has been an error with your submission. Please try again.
-        </p>
+        <div className="Register-error-div">
+          {error.map((err, idx) => (
+            <p key={idx} className="Register-error-txt">
+              {err.message}
+            </p>
+          ))}
+        </div>
       )}
       <form onSubmit={handleSubmit} className="Register-form">
         <input

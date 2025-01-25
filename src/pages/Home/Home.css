@@ -4,8 +4,7 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  min-width: 500px;
-  max-width: 800px;
+  max-width: 600px;
   background-color: #fdf5e8;
   padding: 20px 20px;
   margin: 0 auto;
@@ -32,4 +31,28 @@
 
 .Home-btns:hover {
   color: #d5c5ae;
+}
+
+@media (max-width: 767px) {
+  .Home {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .Home {
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .Home-btns-div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .Home {
+    max-width: 240px;
+    text-align: center;
+  }
 }
